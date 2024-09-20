@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Layout</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" type="text/css" charset="utf-8" />
 </head>
 <body class="dashboard">
-    <header>
-        <h1>LogoType</h1>
-        <form method="get" action="#" class="search">
+        <div class="logo-wrap">
+            <h1>LogoType</h1>
+        </div>
+        <div class="header-right">
+            <form method="get" action="#" class="search">
             <label for="search">Search</label>
-            <input id="search" type="search">
+            <input id="search" type="search" name="search">
+            <button>Search</button>
         </form>
         <menu>
             <ul class="user-profile">
-                <li>Notifications</li>
-                <li>Tommy Tester</li>
+                <li><a class="notifications" href="#">Notifications</a></li>
+                <li><a class="user-name" href="#">Tommy Tester</a></li>
             </ul>
         </menu>
-    </header>
+        </div>
     <nav>
         <ul class="dash-nav">
             <li><a class="home" href="#">Home</a></li>
-            <li><a class="home" href="#">Home</a></li>
-            <li><a class="home" href="#">Home</a></li>
-            <li><a class="home" href="#">Home</a></li>
-            <li><a class="home" href="#">Home</a></li>
-            <li><a class="home" href="#">Home</a></li>
-            <li><a class="home" href="#">Home</a></li>
-            <li><a class="home" href="#">Home</a></li>
-            <li><a class="home" href="#">Home</a></li>
+            <li><a class="profile" href="#">Profile</a></li>
+            <li><a class="messages" href="#">Messages</a></li>
+            <li><a class="history" href="#">History</a></li>
+            <li><a class="tasks" href="#">Tasks</a></li>
+            <li><a class="communities" href="#">Communities</a></li>
+            <li class="nav-space"><a class="settings" href="#">Settings</a></li>
+            <li><a class="support" href="#">Support</a></li>
+            <li><a class="privacy" href="#">Privacy</a></li>
         </ul>
     </nav>
     <main>
@@ -41,21 +44,23 @@
             </div>
             <div class="user-actions">
                 <ul>
-                    <li><a class="new" href="#">Create</a></li>
-                    <li><a class="new" href="#">Create</a></li>
-                    <li><a class="new" href="#">Create</a></li>
+                    <li><a class="create" href="#">Create</a></li>
+                    <li><a class="destroy" href="#">Destroy</a></li>
+                    <li><a class="chill" href="#">Chill</a></li>
                 </ul>
             </div>
         </section>
         <section class="main-content">
-            <h2>Your Projects</h2>
+            <div class="project-wrap">
+                <h2>Your Projects</h2>
+                <div class="cards">
             <div class="card">
                 <h3>Project Name</h3>
                 <p>Mauris ut nunc dolor. Suspendisse potenti. Maecenas vel lectus eleifend, lacinia ligula eget, molestie massa.</p>
                 <ul class="project-actions">
                     <li><a class="star" href="#">Star</a></li>
                     <li><a class="add" href="#">Add</a></li>
-                    <li><a class="fork" href="#">Fork</a></li>
+                    <li><a class="copy" href="#">Copy</a></li>
                 </ul>
             </div>
             <div class="card">
@@ -64,7 +69,7 @@
                 <ul class="project-actions">
                     <li><a class="star" href="#">Star</a></li>
                     <li><a class="add" href="#">Add</a></li>
-                    <li><a class="fork" href="#">Fork</a></li>
+                    <li><a class="copy" href="#">Copy</a></li>
                 </ul>
             </div>
             <div class="card">
@@ -73,7 +78,7 @@
                 <ul class="project-actions">
                     <li><a class="star" href="#">Star</a></li>
                     <li><a class="add" href="#">Add</a></li>
-                    <li><a class="fork" href="#">Fork</a></li>
+                    <li><a class="copy" href="#">Copy</a></li>
                 </ul>
             </div>
             <div class="card">
@@ -82,7 +87,7 @@
                 <ul class="project-actions">
                     <li><a class="star" href="#">Star</a></li>
                     <li><a class="add" href="#">Add</a></li>
-                    <li><a class="fork" href="#">Fork</a></li>
+                    <li><a class="copy" href="#">Copy</a></li>
                 </ul>
             </div>
             <div class="card">
@@ -91,7 +96,7 @@
                 <ul class="project-actions">
                     <li><a class="star" href="#">Star</a></li>
                     <li><a class="add" href="#">Add</a></li>
-                    <li><a class="fork" href="#">Fork</a></li>
+                    <li><a class="copy" href="#">Copy</a></li>
                 </ul>
             </div>
             <div class="card">
@@ -100,48 +105,51 @@
                 <ul class="project-actions">
                     <li><a class="star" href="#">Star</a></li>
                     <li><a class="add" href="#">Add</a></li>
-                    <li><a class="fork" href="#">Fork</a></li>
+                    <li><a class="copy" href="#">Copy</a></li>
                 </ul>
             </div>
-        </section>
-        <section class="announcements">
-            <h3>Announcements</h3>
-            <div class="card">
-                <article>
-                    <h4>Heading Text</h4>
-                    <p>Maecenas vel lectus eleifend, lacinia ligula eget, molestie massa.</p>
-                </article>
-                <article>
-                    <h4>Heading Text</h4>
-                    <p>Maecenas vel lectus eleifend, lacinia ligula eget, molestie massa.</p>
-                </article>
-                <article>
-                    <h4>Heading Text</h4>
-                    <p>Maecenas vel lectus eleifend, lacinia ligula eget, molestie massa.</p>
-                </article>
             </div>
-        </section>
-        <section class="trending">
-            <h3>Trending</h3>
-            <div class="card">
-                <article>
-                    <h4 class="user-name">@UserName</h4>
-                    <p>Lacinia ligula eget</p>
-                </article>
-                <article>
-                    <h4 class="user-name">@UserName</h4>
-                    <p>Lacinia ligula eget</p>
-                </article>
-                <article>
-                    <h4 class="user-name">@UserName</h4>
-                    <p>Lacinia ligula eget</p>
-                </article>
-                <article>
-                    <h4 class="user-name">@UserName</h4>
-                    <p>Lacinia ligula eget</p>
-                </article>
-                
             </div>
+            <div class="feed-wrap">
+            <section class="announcements">
+                <h3>Announcements</h3>
+                <div class="card">
+                    <article>
+                        <h4>Heading Text</h4>
+                        <p>Maecenas vel lectus eleifend, lacinia ligula eget, molestie massa.</p>
+                    </article>
+                    <article>
+                        <h4>Heading Text</h4>
+                        <p>Maecenas vel lectus eleifend, lacinia ligula eget, molestie massa.</p>
+                    </article>
+                    <article>
+                        <h4>Heading Text</h4>
+                        <p>Maecenas vel lectus eleifend, lacinia ligula eget, molestie massa.</p>
+                    </article>
+                </div>
+            </section>
+            <section class="trending">
+                <h3>Trending</h3>
+                <div class="card">
+                    <article>
+                        <h4 class="user-name">@UserName</h4>
+                        <p>Lacinia ligula eget</p>
+                    </article>
+                    <article>
+                        <h4 class="user-name">@UserName</h4>
+                        <p>Lacinia ligula eget</p>
+                    </article>
+                    <article>
+                        <h4 class="user-name">@UserName</h4>
+                        <p>Lacinia ligula eget</p>
+                    </article>
+                    <article>
+                        <h4 class="user-name">@UserName</h4>
+                        <p>Lacinia ligula eget</p>
+                    </article>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
     <footer><small>&copy; 2050 LogoType</small></footer>
