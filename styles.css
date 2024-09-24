@@ -40,13 +40,24 @@ body {
         background-color: gray;
     }
     .logo-wrap h1 {
-        color: rgba(255, 255, 255, 0.5);
+        font-size: 45px;
     }
+    .logo-wrap a {
+        text-decoration: none;
+        background-image: url(images/layers-triple-outline.svg);
+        background-size: 45px;
+        background-position: left;
+        background-repeat: no-repeat;
+        padding: 0 0 0 50px;
+        color: rgba(255, 255, 255, 0.4);
+    }
+
 
     .header-right {
         grid-column: 2 / 3;
         display: flex;
         align-items: center;
+        gap:30px;
         background-color: gainsboro;
 
     }
@@ -68,14 +79,37 @@ body {
         background-color: transparent;
         border: 1px solid gray;
         flex: 1;
+        margin-right: 10px;
      }
 
      .search button {
         flex: 0;
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+     }
+
+     .search-icon {
+        fill: rgba(0, 0, 0, 0.4);
+        width: 40px;
+        height: 40px;
+     }
+
+     .search-icon:hover {
+        fill: rgba(0, 0, 0, 0.9);
+     }
+
+     .hide {
+        position: absolute;
+        left: -999em;
      }
 
      .user-profile {
         display: flex;
+        align-items: center;
         
      }
 
@@ -90,6 +124,21 @@ body {
      .user-profile a:hover {
         color: black;
      }
+     .notifications {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+     }
+     .notifications-icon {
+        fill: rgba(0, 0, 0, 0.4);
+        width: 40px;
+        height: 40px;
+     }
+
+     .notifications-icon:hover {
+        fill: rgba(0, 0, 0, 0.9);
+     }
+
 
 
 
@@ -200,11 +249,20 @@ nav {
             border-radius: 15px;
             padding: 15px 20px;
             font-size: 19px;
+            position:relative;
+        }
+
+        .cards .card p {
+            margin-bottom: 40px;
+
         }
         .project-actions {
             display: flex;
             justify-content: end;
             gap: 15px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
         }
         .project-actions li {
             list-style-type: none;
@@ -212,6 +270,15 @@ nav {
         .project-actions a {
             text-decoration: none;
         }
+        .project-actions a svg {
+            fill: rgba(0, 0, 0, 0.5);
+            display: inline;
+            width: 1.35em;
+            margin-right: 3px;
+            vertical-align: top;
+        }
+
+
         .feed-wrap {
             grid-column: 2 / 3;
             display: grid;
